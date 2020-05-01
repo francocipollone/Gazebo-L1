@@ -1,7 +1,7 @@
 # GAZEBO PADAWAN LEVEL 1
 
 ## 1 - PREPARE WORKSPACE
-Copypaste all the folders into your catkin workspace and do the following:
+Clone all the folders into your catkin workspace and do the following:
 
 `cd <path/to/catkin/workspace>`
 `catkin_make`
@@ -15,7 +15,7 @@ Copypaste all the folders into your catkin workspace and do the following:
 
 ## Using the docker image:
 
-Copypaste all the folders into your catkin workspace and do the following:
+Clone all the folders into your catkin workspace and do the following:
 
 First `./build` the docker image.
 

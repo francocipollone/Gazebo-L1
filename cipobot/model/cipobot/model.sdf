@@ -14,12 +14,10 @@
       </collision>
 
       <visual name='visual'>
-        <pose>-0.06 0 -0.1 0 0 1.57</pose>
         <geometry>
-          <mesh>
-            <uri>model://cipobot/meshes/model.dae</uri>
-            <scale>0.25 0.18 0.23</scale>
-          </mesh>
+          <box>
+            <size>.4 .2 .1</size>
+          </box>
         </geometry>
       </visual>
 

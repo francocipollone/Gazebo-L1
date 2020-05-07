@@ -7,5 +7,45 @@
     <include>
       <uri>model://sun</uri>
     </include>
+    <include>
+      <uri>model://house</uri>
+      <pose> 0 0 0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://sofa_set_1</uri>
+      <pose> 1.16 -0.24 0 0 0 1.56 </pose>
+    </include>
+    <include>
+      <uri>model://table_breakfast</uri>
+      <pose> 2.41 -0.36 0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://bookshelf_large</uri>
+      <pose> 0.83 2.81 0 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://table_dining</uri>
+      <pose> 3.7196 -2.45814 0 0 0 1.570796 </pose>
+    </include>
+    <include>
+      <uri>model://office_chair</uri>
+      <pose> 3.0154 -2.6223 0 0 0 1.570796 </pose>
+    </include>
+    <include>
+      <uri>model://monitor_1</uri>
+      <pose> 3.745 -2.2395 0.66 0 0 1.570796 </pose>
+    </include>
+    <include>
+      <uri>model://mouse</uri>
+      <pose> 3.546 -2.747 0.6693 0 0 0 </pose>
+    </include>
+    <include>
+      <uri>model://keyboard</uri>
+      <pose> 3.558860 -2.319 0.67 0 0 1.570796 </pose>
+    </include>
+    <include>
+      <uri>model://computer_case</uri>
+      <pose> 3.9597 -1.97 0 0 0 1.570796 </pose>
+    </include>
   </world>
 </sdf>

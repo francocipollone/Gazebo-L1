@@ -8,4 +8,8 @@
 
   <node name="robot_spawn" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
   args="-file $(find cipobot)/model/cipobot/model.sdf -sdf -x 0.0 -y 0.0 -z 0.0 -R 0 -P 0 -Y 0 -model cipobot" />
+
+  <node name="teleop_twist_keyboard" pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py"/>
+  <node name="rqt_robot_steering" pkg="rqt_robot_steering" type="rqt_robot_steering"/>
+
 </launch>

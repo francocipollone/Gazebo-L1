@@ -47,5 +47,97 @@
       <uri>model://computer_case</uri>
       <pose> 3.9597 -1.97 0 0 0 1.570796 </pose>
     </include>
+    <light name='bath_light' type='spot'>
+      <attenuation>
+        <range>0</range>
+        <linear>0.05</linear>
+      </attenuation>
+      <specular>1 1 1 1</specular>
+      <spot>
+        <inner_angle>0.5</inner_angle>
+        <outer_angle>1</outer_angle>
+        <falloff>1</falloff>
+      </spot>
+      <pose>-2.5 2.15 2.75 0 0 0</pose>
+    </light>
+    <light name='bedroom_light' type='spot'>
+      <attenuation>
+        <range>0</range>
+        <linear>0.05</linear>
+      </attenuation>
+      <specular>1 1 1 1</specular>
+      <spot>
+        <inner_angle>0.5</inner_angle>
+        <outer_angle>1</outer_angle>
+        <falloff>1</falloff>
+      </spot>
+      <pose>-2.2 -0.2 2.75 0 0 0</pose>
+    </light>
+    <light name='living_light' type='spot'>
+      <attenuation>
+        <range>0</range>
+        <linear>0.05</linear>
+      </attenuation>
+      <specular>1 1 1 1</specular>
+      <spot>
+        <inner_angle>0.5</inner_angle>
+        <outer_angle>1</outer_angle>
+        <falloff>1</falloff>
+      </spot>
+      <pose>2.41 -0.36 2.75 0 0 0</pose>
+    </light>
+    <light name='kitchen_light' type='spot'>
+      <attenuation>
+        <range>0</range>
+        <linear>0.05</linear>
+      </attenuation>
+      <specular>1 1 1 1</specular>
+      <spot>
+        <inner_angle>0.5</inner_angle>
+        <outer_angle>1</outer_angle>
+        <falloff>1</falloff>
+      </spot>
+      <pose>0 0 2.75 0 0 0</pose>
+    </light>
+    <plugin name='KitcherLight' filename='libroom_light.so'>
+      <entity>cipobot::chassis</entity>
+      <light_name>kitchen_light</light_name>
+      <pose>-0.1 0.7 0 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>1 4.35 3</size>
+        </box>
+      </geometry>
+    </plugin>
+    <plugin name='LivingLight' filename='libroom_light.so'>
+      <entity>cipobot::chassis</entity>
+      <light_name>living_light</light_name>
+      <pose>2.3 -0.1 0 0 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>2.75 5.65 3</size>
+        </box>
+      </geometry>
+    </plugin>
+    <plugin name='BedroomLight' filename='libroom_light.so'>
+      <entity>cipobot::chassis</entity>
+      <light_name>bedroom_light</light_name>
+      <pose>-2.4 -0.3 0 0 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>2.75 2.6 3</size>
+        </box>
+      </geometry>
+    </plugin>
+    <plugin name='BathroomLight' filename='libroom_light.so'>
+      <entity>cipobot::chassis</entity>
+      <light_name>bath_light</light_name>
+      <pose>-2.75 2.15 0 0 0 0 0</pose>
+      <geometry>
+        <box>
+          <size>2.25 1.5 3</size>
+        </box>
+      </geometry>
+    </plugin>
   </world>
 </sdf>

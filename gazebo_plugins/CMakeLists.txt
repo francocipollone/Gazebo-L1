@@ -205,3 +205,18 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+find_package(gazebo REQUIRED)
+find_package(ignition-math6 REQUIRED)
+find_package(ignition-transport4 REQUIRED)
+find_package(ignition-msgs5 REQUIRED)
+include_directories(${GAZEBO_INCLUDE_DIRS})
+include_directories(SYSTEM ${IGNITION-MATH_INCLUDE_DIRS})
+link_directories(${GAZEBO_LIBRARY_DIRS})
+list(APPEND CMAKE_CXX_FLAGS "${GAZEBO_CXX_FLAGS}")
+
+add_library(room_light SHARED room_light.cc)
+target_link_libraries(room_light
+  ${GAZEBO_LIBRARIES}
+  ignition-transport4::ignition-transport4
+)

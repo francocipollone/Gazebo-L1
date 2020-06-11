@@ -90,8 +90,7 @@ void RoomLight::OnUpdate(const common::UpdateInfo &/*_info*/) {
     this->entity_ = this->world_->EntityByName(
         this->entityName_);
     entity = this->entity_.lock();
-    if (!entity)
-    {
+    if (!entity) {
       // Could not find entity being tested.
       this->Publish(false);
       return;
